@@ -211,8 +211,8 @@ print(dataset.head(10))
 <tr><td>6 </td><td> 35   </td><td>        7 </td><td> Female </td><td>    18   </td><td>           6</td></tr>
 <tr><td>7 </td><td> 23  </td><td>         8 </td><td> Female </td><td>    18   </td><td>          94</td></tr>
 <tr><td>8 </td><td> 64  </td><td>         9 </td><td>   Male </td><td>    19   </td><td>           3</td></tr>
-<tr><td>9 </td><td> 30  </td><td>        10 </td><td> Female </td><td>    19   </td><td>          72</td></tr></table>
-<tr><td colspan="6" align="center"> dataset setelah dinormalisasi :</td></tr> <table>
+<tr><td>9 </td><td> 30  </td><td>        10 </td><td> Female </td><td>    19   </td><td>          72</td></tr></table></br><table>
+<tr><td colspan="6" align="center"> dataset setelah dinormalisasi :</td></tr> 
  <tr><td>  </td><td>     Age</td><td> Customer ID </td><td> Gender </td><td>   Income </td><td> Spending Score</td></tr>
 <tr><td>0 </td><td> 0.019231 </td><td>          1 </td><td>   Male </td><td> 0.000000  </td><td>      0.387755</td></tr>
 <tr><td>1 </td><td> 0.057692  </td><td>         2  </td><td>  Male</td><td>  0.000000  </td><td>      0.816327</td></tr>
