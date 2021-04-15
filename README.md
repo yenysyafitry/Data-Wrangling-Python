@@ -49,4 +49,4 @@ Academy DQLab</i></table></details>
 
 <details> <summary><b>Membaca file dengan menggunakan pandas</b></br>
 </summary><table align="justify"><i>Output : </br>25</br>
-Academy DQLab</i></table></details>
+Academy DQLab</i></table></details> 
