@@ -200,7 +200,7 @@ dataset = pd.DataFrame({'Age':data[:,0],'Income':data[:,1],'Spending Score':data
 print("dataset setelah dinormalisasi :")</br>
 print(dataset.head(10))
 </summary><table align="justify"><i>Output : </i></br>
-dataset sebelum dinormalisasi :
+<tr><td colspan="6"> dataset sebelum dinormalisasi :</td></tr>
   <tr><td></td><td>Age</td><td> Customer ID </td><td> Gender</td><td> Income </td><td>Spending Score</td></tr>
 <tr><td>0 </td><td> 19  </td><td>         1 </td><td>   Male </td><td>    15 </td><td>            39</td></tr>
 <tr><td>1 </td><td> 21  </td><td>         2 </td><td>   Male </td><td>    15  </td><td>           81</td></tr>
@@ -212,8 +212,7 @@ dataset sebelum dinormalisasi :
 <tr><td>7 </td><td> 23  </td><td>         8 </td><td> Female </td><td>    18   </td><td>          94</td></tr>
 <tr><td>8 </td><td> 64  </td><td>         9 </td><td>   Male </td><td>    19   </td><td>           3</td></tr>
 <tr><td>9 </td><td> 30  </td><td>        10 </td><td> Female </td><td>    19   </td><td>          72</td></tr>
-<tr><td colspan="6"> </td></tr>
-dataset setelah dinormalisasi :
+<tr><td colspan="6"> dataset setelah dinormalisasi :</td></tr>
  <tr><td>  </td><td>     Age</td><td> Customer ID </td><td> Gender </td><td>   Income </td><td> Spending Score</td></tr>
 <tr><td>0 </td><td> 0.019231 </td><td>          1 </td><td>   Male </td><td> 0.000000  </td><td>      0.387755</td></tr>
 <tr><td>1 </td><td> 0.057692  </td><td>         2  </td><td>  Male</td><td>  0.000000  </td><td>      0.816327</td></tr>
