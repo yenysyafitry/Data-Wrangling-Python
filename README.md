@@ -187,9 +187,9 @@ Academy DQLab</i></table></details>
 <details> <summary><b>Praktek Normalisasi menggunakan Scikit Learn pada Python</b></br>Scikit Learn merupakan library pada python yang digunakan untuk machine learning dan data science. Salah satu library yang selalu menjadi favorit dan komunitasnya sangat kuat. Scikit-learn sendiri tidak hanya untuk analytics saja, namun juga untuk pre-processing, feature selection, dan proses analysis lainnya. Melanjutkan dari sesi normalisasi data, mari kita praktekan kode di bawah ini :</br></br>import pandas as pd</br>
 import numpy as np</br>
 from sklearn import preprocessing</br>
-csv_data = pd.read_csv("https://dqlab-dataset.s3-ap-southeast-1.amazonaws.com/shopping_data.csv")</br>
+csv_data = pd.read_csv("https://storage.googleapis.com/dqlab-dataset/shopping_data.csv")</br>
 array = csv_data.values</br>
-X = array[:,2:5] #memisahkan fitur dari dataset. </br>
+X = array[:,2:5] #memisahkan fitur dari dataset</br>
 Y = array[:,0:1]  #memisahkan class dari dataset</br>
 dataset=pd.DataFrame({'Customer ID':array[:,0],'Gender':array[:,1],'Age':array[:,2],'Income':array[:,3],'Spending Score':array[:,4]})</br>
 print("dataset sebelum dinormalisasi :")</br>
@@ -212,6 +212,7 @@ dataset sebelum dinormalisasi :
 <tr><td>7 </td><td> 23  </td><td>         8 </td><td> Female </td><td>    18   </td><td>          94</td></tr>
 <tr><td>8 </td><td> 64  </td><td>         9 </td><td>   Male </td><td>    19   </td><td>           3</td></tr>
 <tr><td>9 </td><td> 30  </td><td>        10 </td><td> Female </td><td>    19   </td><td>          72</td></tr>
+<tr><td colspan="6"> </td></tr>
 dataset setelah dinormalisasi :
  <tr><td>  </td><td>     Age</td><td> Customer ID </td><td> Gender </td><td>   Income </td><td> Spending Score</td></tr>
 <tr><td>0 </td><td> 0.019231 </td><td>          1 </td><td>   Male </td><td> 0.000000  </td><td>      0.387755</td></tr>
