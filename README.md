@@ -12,7 +12,7 @@ csv_data = pd.read_csv("https://dqlab-dataset.s3-ap-southeast-1.amazonaws.com/sh
 print(csv_data)	</i></p>
 
 
-<details> <summary><b>Membaca file dengan menggunakan head()</b></br>Pada suatu kasus, data yang kita baca cukup banyak atau loading yang lama. Untuk memastikan data kita terbaca dengan baik dan bisa menampilkan data sebagian untuk ditampilkan secara benar, kita bisa memakai fungsi head(). Bisa dituliskan kode di bawah ini untuk prakteknya:</br></br>import pandas as pd</br>
+<details> <summary align="justify"><b>Membaca file dengan menggunakan head()</b></br>Pada suatu kasus, data yang kita baca cukup banyak atau loading yang lama. Untuk memastikan data kita terbaca dengan baik dan bisa menampilkan data sebagian untuk ditampilkan secara benar, kita bisa memakai fungsi head(). Bisa dituliskan kode di bawah ini untuk prakteknya:</br></br>import pandas as pd</br>
 csv_data = pd.read_csv("https://dqlab-dataset.s3-ap-southeast-1.amazonaws.com/shopping_data.csv")</br>
 print(csv_data.head())
 </summary><table align="justify"><i>Output : </br></i>
