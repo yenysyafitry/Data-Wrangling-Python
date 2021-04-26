@@ -92,7 +92,7 @@ print(csv_data['Age'])</i>
 Name: Age, Length: 200, dtype: int64
 </table></details>
 
-<details> <summary><b>Melakukan akses data melalui baris</b></br>Selain melakukan akses data melalui kolom, dengan menggunakan pandas juga bisa melakukan akses dengan menggunakan baris. Berbeda dengan akses melalui kolom, fungsi untuk menampilkan data dari suatu baris adalah fungsi .iloc[i] dimana [i] menunjukan urutan baris yang akan ditampilkan yang dimana indexnya diawali dari 0. Coba ketikan code di bawah ini untuk mempermudah : </br></br>import pandas as pd</br
+<details align="justify"> <summary><b>Melakukan akses data melalui baris</b></br>Selain melakukan akses data melalui kolom, dengan menggunakan pandas juga bisa melakukan akses dengan menggunakan baris. Berbeda dengan akses melalui kolom, fungsi untuk menampilkan data dari suatu baris adalah fungsi .iloc[i] dimana [i] menunjukan urutan baris yang akan ditampilkan yang dimana indexnya diawali dari 0. Coba ketikan code di bawah ini untuk mempermudah : </br></br>import pandas as pd</br
 csv_data = pd.read_csv("https://dqlab-dataset.s3-ap-southeast-1.amazonaws.com/shopping_data.csv")</br
 print(csv_data.iloc[5])	
 </summary><table align="justify"><i>Output : </br></i>
