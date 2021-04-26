@@ -92,7 +92,7 @@ print(csv_data['Age'])</i>
 Name: Age, Length: 200, dtype: int64
 </table></details>
 
-<details align="justify"> <summary><b>Melakukan akses data melalui baris</b></br>Selain melakukan akses data melalui kolom, dengan menggunakan pandas juga bisa melakukan akses dengan menggunakan baris. Berbeda dengan akses melalui kolom, fungsi untuk menampilkan data dari suatu baris adalah fungsi .iloc[i] dimana [i] menunjukan urutan baris yang akan ditampilkan yang dimana indexnya diawali dari 0. Coba ketikan code di bawah ini untuk mempermudah : </br></br>import pandas as pd</br
+<details> <summary align="justify"><b>Melakukan akses data melalui baris</b></br>Selain melakukan akses data melalui kolom, dengan menggunakan pandas juga bisa melakukan akses dengan menggunakan baris. Berbeda dengan akses melalui kolom, fungsi untuk menampilkan data dari suatu baris adalah fungsi .iloc[i] dimana [i] menunjukan urutan baris yang akan ditampilkan yang dimana indexnya diawali dari 0. Coba ketikan code di bawah ini untuk mempermudah : </br></br>import pandas as pd</br
 csv_data = pd.read_csv("https://dqlab-dataset.s3-ap-southeast-1.amazonaws.com/shopping_data.csv")</br
 print(csv_data.iloc[5])	
 </summary><table align="justify"><i>Output : </br></i>
@@ -104,11 +104,11 @@ print(csv_data.iloc[5])
 <tr><td>Name: 5 </td><td> dtype: object
 </table></details>
 
-<details> <summary><b>Menampilkan suatu data dari baris dan kolom tertentu</b></br>
+<details> <summary align="justify"><b>Menampilkan suatu data dari baris dan kolom tertentu</b></br>
 </summary><table align="justify"><i>Output : </br>25</br>
 Academy DQLab</i></table></details>
 
-<details> <summary><b>Membaca file dengan menggunakan pandas</b></br>Tidak hanya dengan menentukan dari kolom dan baris, dengan menggunakan pandas kita juga bisa memanggil suatu data dari suatu baris dan kolom tertentu dalam satu waktu. Perhatikan dan coba kode di bawah ini:</br></br> import pandas as pd</br>
+<details> <summary align="justify"><b>Membaca file dengan menggunakan pandas</b></br>Tidak hanya dengan menentukan dari kolom dan baris, dengan menggunakan pandas kita juga bisa memanggil suatu data dari suatu baris dan kolom tertentu dalam satu waktu. Perhatikan dan coba kode di bawah ini:</br></br> import pandas as pd</br>
 csv_data = pd.read_csv("https://dqlab-dataset.s3-ap-southeast-1.amazonaws.com/shopping_data.csv")</br>
 print(csv_data['Age'].iloc[1])</br>
 print("Cuplikan Dataset:")</br>
@@ -122,7 +122,7 @@ print(csv_data.head())
 <tr><td>4   </td><td>         5  </td><td> Female  </td><td>  31  </td><td>                 17  </td><td>                     40</td></tr>
 </table></details>
 
-<details> <summary><b>Menampilkan data dalam range tertentu</b></br>Setelah menampilkan suatu kelompok data, bagaimana jika ingin menampilkan data dari baris ke 5 sampai ke 20 dari suatu dataset? Untuk mengantisipasi hal tersebut, pandas juga bisa menampilkan data dalam range tertentu, baik range untuk baris saja, kolom saja, dan range untuk baris dan kolom.
+<details> <summary align="justify"><b>Menampilkan data dalam range tertentu</b></br>Setelah menampilkan suatu kelompok data, bagaimana jika ingin menampilkan data dari baris ke 5 sampai ke 20 dari suatu dataset? Untuk mengantisipasi hal tersebut, pandas juga bisa menampilkan data dalam range tertentu, baik range untuk baris saja, kolom saja, dan range untuk baris dan kolom.
   Akses range pada suatu kolom dan baris tertentu, untuk mencobanya silahkan ketikkan kode di bawah ini :</br></br>import pandas as pd</br>
 csv_data = pd.read_csv("https://dqlab-dataset.s3-ap-southeast-1.amazonaws.com/shopping_data.csv")</br>
 print("Menampilkan data ke 5 sampai kurang dari 10 dalam satu baris:")</br>
@@ -136,7 +136,7 @@ print(csv_data.iloc[5:10])
 <tr><td>9       </td><td>   10 </td><td> Female  </td><td> 30  </td><td>                19  </td><td>                    72</td></tr>
 </table></details>
 
-<details> <summary><b>Menampilkan informasi statistik dengan Numpy</b></br>Mengetahui informasi statistik pada suatu data sangat penting. Mulai dari distribusi data, nilai max atau min, hingga standar deviasi dari suatu dataset. Jika datanya berjumlah dibawah 10 mungkin masih dikerjakan secara manual. Namun, bayangkan jika datanya sudah mencapai ratusan bahkan ribuan. Tidak mungkin pastinya untuk dilakukan secara manual. Maka dari itu pentingnya fungsi describe() pada pandas. Fungsi describe() ini memungkinkan untuk mengetahui informasi statistik dari suatu dataset secara cepat. Coba untuk ketikkan kode di bawah ini :</br></br>import pandas as pd</br>
+<details> <summary align="justify"><b>Menampilkan informasi statistik dengan Numpy</b></br>Mengetahui informasi statistik pada suatu data sangat penting. Mulai dari distribusi data, nilai max atau min, hingga standar deviasi dari suatu dataset. Jika datanya berjumlah dibawah 10 mungkin masih dikerjakan secara manual. Namun, bayangkan jika datanya sudah mencapai ratusan bahkan ribuan. Tidak mungkin pastinya untuk dilakukan secara manual. Maka dari itu pentingnya fungsi describe() pada pandas. Fungsi describe() ini memungkinkan untuk mengetahui informasi statistik dari suatu dataset secara cepat. Coba untuk ketikkan kode di bawah ini :</br></br>import pandas as pd</br>
 csv_data = pd.read_csv("shopping_data.csv")</br>
 print(csv_data.describe(exclude=['O']))
 </summary><table align="justify"><i>Output : </br></i>
@@ -151,13 +151,13 @@ print(csv_data.describe(exclude=['O']))
 <tr><td>max  </td><td>  200.000000 </td><td>  70.000000   </td><td>       137.000000  </td><td>             99.000000</td></tr>
 </table></details>
 
-<details> <summary><b>Melakukan pengecekan untuk nilai NULL yang ada</b></br>Dengan menggunakan fungsi pandas, kita tidak perlu melihat satu persatu baris data untuk mengetahui apakah ada nilai kosong atau NULL/NAN pada suatu dataset. Bayangkan jika kita memilki 1000 baris data. Apakah kita harus melihat semua baris data tersebut? Tentu saja tidak. Maka dari itu di pandas disediakan fungsi untuk mengecek apakah ada data yang kosong. Coba praktikkan kode di bawah ini :</br></br>import pandas as pd</br>
+<details> <summary align="justify"><b>Melakukan pengecekan untuk nilai NULL yang ada</b></br>Dengan menggunakan fungsi pandas, kita tidak perlu melihat satu persatu baris data untuk mengetahui apakah ada nilai kosong atau NULL/NAN pada suatu dataset. Bayangkan jika kita memilki 1000 baris data. Apakah kita harus melihat semua baris data tersebut? Tentu saja tidak. Maka dari itu di pandas disediakan fungsi untuk mengecek apakah ada data yang kosong. Coba praktikkan kode di bawah ini :</br></br>import pandas as pd</br>
 csv_data = pd.read_csv("https://dqlab-dataset.s3-ap-southeast-1.amazonaws.com/shopping_data_missingvalue.csv")</br>
 print(csv_data.isnull().values.any())
 </summary><table align="justify"><i>Output : </br>True</i></table></details> 
 
 
-<details> <summary><b>Mengisi dengan Mean</b></br>Fungsi mean sendiri berfungsi untuk menampilkan  nilai mean (rata-rata) dari setiap kolom. Nilai inilah nanti yang akan mengisi nilai kosong dari dataset yang mengalami kasus missing value. Untuk mengisi nilai yang kosong menggunakan fungsi fillna(), coba ketikkan kode di bawah ini :</br></br>import pandas as pd</br>
+<details> <summary align="justify"><b>Mengisi dengan Mean</b></br>Fungsi mean sendiri berfungsi untuk menampilkan  nilai mean (rata-rata) dari setiap kolom. Nilai inilah nanti yang akan mengisi nilai kosong dari dataset yang mengalami kasus missing value. Untuk mengisi nilai yang kosong menggunakan fungsi fillna(), coba ketikkan kode di bawah ini :</br></br>import pandas as pd</br>
 csv_data = pd.read_csv("https://dqlab-dataset.s3-ap-southeast-1.amazonaws.com/shopping_data_missingvalue.csv")</br>
 print(csv_data.mean())</br>
 print("Dataset yang masih terdapat nilai kosong ! :")</br>
@@ -168,7 +168,7 @@ print(csv_data.head(10))
 </summary><table align="justify"><i>Output : </br>25</br>
 Academy DQLab</i></table></details> 
 
-<details> <summary><b>Mengisi dengan Median</b></br>median digunakan untuk data-data yang memiliki sifat outlier yang kuat. Kenapa median dipilih? Median merupakan nilai tengah yang artinya bukan hasil dari perhitungan yang melibatkan data outlier. Pada beberapa kasus, data outlier dianggap mengganggu dan sering dianggap noisy karena bisa mempengaruhi distribusi kelas dan mengganggu analisa pada klasterisasi (clustering).</br></br>
+<details> <summary align="justify"><b>Mengisi dengan Median</b></br>median digunakan untuk data-data yang memiliki sifat outlier yang kuat. Kenapa median dipilih? Median merupakan nilai tengah yang artinya bukan hasil dari perhitungan yang melibatkan data outlier. Pada beberapa kasus, data outlier dianggap mengganggu dan sering dianggap noisy karena bisa mempengaruhi distribusi kelas dan mengganggu analisa pada klasterisasi (clustering).</br></br>
 </summary><table align="justify"><i>Output : </br></i>
 <tr><td></td><td>  CustomerID  </td><td> Genre </td><td>       Age </td><td> Annual Income (k$) </td><td> Spending Score (1-100)</td></tr>
 <tr><td>0     </td><td>      1  </td><td>  Male </td><td> 19.000000 </td><td>          15.000000 </td><td>              39.000000</td></tr>
@@ -184,7 +184,7 @@ Academy DQLab</i></table></details>
 </table></details> 
 
 
-<details> <summary><b>Praktek Normalisasi menggunakan Scikit Learn pada Python</b></br>Scikit Learn merupakan library pada python yang digunakan untuk machine learning dan data science. Salah satu library yang selalu menjadi favorit dan komunitasnya sangat kuat. Scikit-learn sendiri tidak hanya untuk analytics saja, namun juga untuk pre-processing, feature selection, dan proses analysis lainnya. Melanjutkan dari sesi normalisasi data, mari kita praktekan kode di bawah ini :</br></br>import pandas as pd</br>
+<details> <summary align="justify"><b>Praktek Normalisasi menggunakan Scikit Learn pada Python</b></br>Scikit Learn merupakan library pada python yang digunakan untuk machine learning dan data science. Salah satu library yang selalu menjadi favorit dan komunitasnya sangat kuat. Scikit-learn sendiri tidak hanya untuk analytics saja, namun juga untuk pre-processing, feature selection, dan proses analysis lainnya. Melanjutkan dari sesi normalisasi data, mari kita praktekan kode di bawah ini :</br></br>import pandas as pd</br>
 import numpy as np</br>
 from sklearn import preprocessing</br>
 csv_data = pd.read_csv("https://storage.googleapis.com/dqlab-dataset/shopping_data.csv")</br>
@@ -225,5 +225,5 @@ print(dataset.head(10))
 <tr><td>8 </td><td> 0.884615  </td><td>         9 </td><td>   Male </td><td> 0.032787  </td><td>      0.020408</td></tr>
 <tr><td>9</td><td>  0.230769  </td><td>        10 </td><td> Female </td><td> 0.032787  </td><td>      0.724490</td></tr>
 </table></details> 
-
+</br></br></br>
 <p align="center"><b>E-Sertifikat Data Wragling Python DQLab</b></br><img src="https://github.com/yenysyafitry/Data-Wrangling-Python/blob/main/e-sertifikat.jpg"></p>
