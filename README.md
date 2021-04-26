@@ -15,7 +15,7 @@ print(csv_data)	</i></p>
 <details> <summary align="justify"><b>Membaca file dengan menggunakan head()</b></br>Pada suatu kasus, data yang kita baca cukup banyak atau loading yang lama. Untuk memastikan data kita terbaca dengan baik dan bisa menampilkan data sebagian untuk ditampilkan secara benar, kita bisa memakai fungsi head(). Bisa dituliskan kode di bawah ini untuk prakteknya:</br></br>import pandas as pd</br>
 csv_data = pd.read_csv("https://dqlab-dataset.s3-ap-southeast-1.amazonaws.com/shopping_data.csv")</br>
 print(csv_data.head()) </br> </br>
-</summary><table align="justify"><i></br>Output : </br></i>
+</summary><table align="justify"><i>Output : </br></i>
 <tr><td></td><td>CustomerID </td><td>Genre</td><td>Age</td><td>Annual Income(k$)</td> <td>Spending Score (1-100)</td></tr>
 <tr><td>0</td><td>1</td><td>Male</td><td>19</td><td>15</td><td>39</td></tr>
 <tr><td>1</td><td>2</td><td>Male </td><td>21</td><td>15</td><td>81</td></tr>
@@ -26,8 +26,8 @@ print(csv_data.head()) </br> </br>
 
 <details> <summary align="justify"><b>Melakukan akses data kolom</b></br>Pertama yang harus dilakukan untuk melakukan akses kolom adalah mengetahui nama-nama kolom yang ada. Coba ketikkan kode di bawah ini untuk melihat nama kolom yang ada :</br></br><i>import pandas as pd</br>
 csv_data = pd.read_csv("https://storage.googleapis.com/dqlab-dataset/shopping_data.csv")</br>
-print(csv_data['Age'])</i>
-</summary><table align="justify"><i></br>Output : </br></i>
+print(csv_data['Age'])</i> </br> </br>
+</summary><table align="justify"><i>Output : </br></i>
 <tr><td>0  </td><td>    19</td></tr>
 <tr><td>1  </td><td>    21</td></tr>
 <tr><td>2   </td><td>   20</td></tr>
@@ -94,8 +94,8 @@ Name: Age, Length: 200, dtype: int64
 
 <details> <summary align="justify"><b>Melakukan akses data melalui baris</b></br>Selain melakukan akses data melalui kolom, dengan menggunakan pandas juga bisa melakukan akses dengan menggunakan baris. Berbeda dengan akses melalui kolom, fungsi untuk menampilkan data dari suatu baris adalah fungsi .iloc[i] dimana [i] menunjukan urutan baris yang akan ditampilkan yang dimana indexnya diawali dari 0. Coba ketikan code di bawah ini untuk mempermudah : </br></br>import pandas as pd</br>
 csv_data = pd.read_csv("https://dqlab-dataset.s3-ap-southeast-1.amazonaws.com/shopping_data.csv")</br>
-print(csv_data.iloc[5])	
-</summary><table align="justify"><i></br>Output : </br></i>
+print(csv_data.iloc[5])	 </br> </br>
+</summary><table align="justify"><i>Output : </br></i>
 <tr><td>CustomerID    </td><td>                 6</td></tr>
 <tr><td>Genre         </td><td>            Female</td></tr>
 <tr><td>Age           </td><td>                22</td></tr>
@@ -112,7 +112,7 @@ Academy DQLab</i></table></details>
 csv_data = pd.read_csv("https://dqlab-dataset.s3-ap-southeast-1.amazonaws.com/shopping_data.csv")</br>
 print(csv_data['Age'].iloc[1])</br>
 print("Cuplikan Dataset:")</br>
-print(csv_data.head())				
+print(csv_data.head())				 </br> </br>
 </summary><table align="justify"><i>Output : </br></i>
  <tr><td></td><td> CustomerID </td><td>   Genre  </td><td> Age </td><td>  Annual Income (k$) </td><td>  Spending Score (1-100)</td></tr>
 <tr><td>0   </td><td>         1  </td><td>   Male  </td><td>  19 </td><td>                  15 </td><td>                      39</td></tr>
@@ -126,7 +126,7 @@ print(csv_data.head())
   Akses range pada suatu kolom dan baris tertentu, untuk mencobanya silahkan ketikkan kode di bawah ini :</br></br>import pandas as pd</br>
 csv_data = pd.read_csv("https://dqlab-dataset.s3-ap-southeast-1.amazonaws.com/shopping_data.csv")</br>
 print("Menampilkan data ke 5 sampai kurang dari 10 dalam satu baris:")</br>
-print(csv_data.iloc[5:10])
+print(csv_data.iloc[5:10]) </br> </br>
 </summary><table align="justify"><i>Output : </br></i>
 <tr><td></td><td>CustomerID </td><td>  Genre </td><td> Age </td><td> Annual Income (k$)  </td><td>Spending Score (1-100)</td></tr>
 <tr><td>5       </td><td>    6 </td><td> Female  </td><td> 22  </td><td>                17 </td><td>                     76</td></tr>
@@ -138,7 +138,7 @@ print(csv_data.iloc[5:10])
 
 <details> <summary align="justify"><b>Menampilkan informasi statistik dengan Numpy</b></br>Mengetahui informasi statistik pada suatu data sangat penting. Mulai dari distribusi data, nilai max atau min, hingga standar deviasi dari suatu dataset. Jika datanya berjumlah dibawah 10 mungkin masih dikerjakan secara manual. Namun, bayangkan jika datanya sudah mencapai ratusan bahkan ribuan. Tidak mungkin pastinya untuk dilakukan secara manual. Maka dari itu pentingnya fungsi describe() pada pandas. Fungsi describe() ini memungkinkan untuk mengetahui informasi statistik dari suatu dataset secara cepat. Coba untuk ketikkan kode di bawah ini :</br></br>import pandas as pd</br>
 csv_data = pd.read_csv("shopping_data.csv")</br>
-print(csv_data.describe(exclude=['O']))
+print(csv_data.describe(exclude=['O'])) </br> </br>
 </summary><table align="justify"><i>Output : </br></i>
 <tr><td></td><td>        CustomerID </td><td>        Age </td><td> Annual Income (k$)</td><td>  Spending Score (1-100)</td></tr>
 <tr><td>count</td><td>  200.000000 </td><td> 200.000000  </td><td>        200.000000  </td><td>            200.000000</td></tr>
@@ -153,7 +153,7 @@ print(csv_data.describe(exclude=['O']))
 
 <details> <summary align="justify"><b>Melakukan pengecekan untuk nilai NULL yang ada</b></br>Dengan menggunakan fungsi pandas, kita tidak perlu melihat satu persatu baris data untuk mengetahui apakah ada nilai kosong atau NULL/NAN pada suatu dataset. Bayangkan jika kita memilki 1000 baris data. Apakah kita harus melihat semua baris data tersebut? Tentu saja tidak. Maka dari itu di pandas disediakan fungsi untuk mengecek apakah ada data yang kosong. Coba praktikkan kode di bawah ini :</br></br>import pandas as pd</br>
 csv_data = pd.read_csv("https://dqlab-dataset.s3-ap-southeast-1.amazonaws.com/shopping_data_missingvalue.csv")</br>
-print(csv_data.isnull().values.any())
+print(csv_data.isnull().values.any()) </br> </br>
 </summary><table align="justify"><i>Output : </br>True</i></table></details> 
 
 
@@ -164,7 +164,7 @@ print("Dataset yang masih terdapat nilai kosong ! :")</br>
 print(csv_data.head(10))</br>
 csv_data=csv_data.fillna(csv_data.mean())</br>
 print("Dataset yang sudah diproses Handling Missing Values dengan Mean :")</br>
-print(csv_data.head(10))
+print(csv_data.head(10)) </br> </br>
 </summary><table align="justify"><i>Output : </br>25</br>
 Academy DQLab</i></table></details> 
 
@@ -198,7 +198,7 @@ min_max_scaler = preprocessing.MinMaxScaler(feature_range=(0,1)) #inisialisasi n
 data = min_max_scaler.fit_transform(X) #transformasi MinMax untuk fitur</br>
 dataset = pd.DataFrame({'Age':data[:,0],'Income':data[:,1],'Spending Score':data[:,2],'Customer ID':array[:,0],'Gender':array[:,1]})</br>
 print("dataset setelah dinormalisasi :")</br>
-print(dataset.head(10))
+print(dataset.head(10)) </br> </br>
 </summary><table align="justify"><i>Output : </i></br>
 <tr><td colspan="6" align="center"> dataset sebelum dinormalisasi :</td></tr>
   <tr><td></td><td>Age</td><td> Customer ID </td><td> Gender</td><td> Income </td><td>Spending Score</td></tr>
