@@ -226,3 +226,4 @@ print(dataset.head(10))
 <tr><td>9</td><td>  0.230769  </td><td>        10 </td><td> Female </td><td> 0.032787  </td><td>      0.724490</td></tr>
 </table></details> 
 
+<p align="center"><b>E-Sertifikat Data Wragling Python DQLab</b></br><img src="https://github.com/yenysyafitry/Data-Wrangling-Python/blob/main/e-sertifikat.jpg"></p>
