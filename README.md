@@ -24,7 +24,7 @@ print(csv_data.head())
 <</br>
   </table></details>
 
-<details> <summary><b>Melakukan akses data kolom</b></br>Pertama yang harus dilakukan untuk melakukan akses kolom adalah mengetahui nama-nama kolom yang ada. Coba ketikkan kode di bawah ini untuk melihat nama kolom yang ada :</br></br><i>import pandas as pd</br>
+<details> <summary align="justify"><b>Melakukan akses data kolom</b></br>Pertama yang harus dilakukan untuk melakukan akses kolom adalah mengetahui nama-nama kolom yang ada. Coba ketikkan kode di bawah ini untuk melihat nama kolom yang ada :</br></br><i>import pandas as pd</br>
 csv_data = pd.read_csv("https://storage.googleapis.com/dqlab-dataset/shopping_data.csv")</br>
 print(csv_data['Age'])</i>
 </summary><table align="justify"><i>Output : </br></i>
