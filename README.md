@@ -104,9 +104,6 @@ print(csv_data.iloc[5])	 </br> </br>
 <tr><td>Name: 5 </td><td> dtype: object
 </table></details>
 
-<details> <summary align="justify"><b>Menampilkan suatu data dari baris dan kolom tertentu</b></br>
-</summary><table align="justify"><i>Output : </br>25</br>
-Academy DQLab</i></table></details>
 
 <details> <summary align="justify"><b>Membaca file dengan menggunakan pandas</b></br>Tidak hanya dengan menentukan dari kolom dan baris, dengan menggunakan pandas kita juga bisa memanggil suatu data dari suatu baris dan kolom tertentu dalam satu waktu. Perhatikan dan coba kode di bawah ini:</br></br> import pandas as pd</br>
 csv_data = pd.read_csv("https://dqlab-dataset.s3-ap-southeast-1.amazonaws.com/shopping_data.csv")</br>
