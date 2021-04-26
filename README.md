@@ -27,7 +27,7 @@ print(csv_data.head())
 <details> <summary align="justify"><b>Melakukan akses data kolom</b></br>Pertama yang harus dilakukan untuk melakukan akses kolom adalah mengetahui nama-nama kolom yang ada. Coba ketikkan kode di bawah ini untuk melihat nama kolom yang ada :</br></br><i>import pandas as pd</br>
 csv_data = pd.read_csv("https://storage.googleapis.com/dqlab-dataset/shopping_data.csv")</br>
 print(csv_data['Age'])</i>
-</summary><table align="justify"><i>Output : </br></i>
+</summary><table align="justify"><i></br>Output : </br></i>
 <tr><td>0  </td><td>    19</td></tr>
 <tr><td>1  </td><td>    21</td></tr>
 <tr><td>2   </td><td>   20</td></tr>
@@ -92,10 +92,10 @@ print(csv_data['Age'])</i>
 Name: Age, Length: 200, dtype: int64
 </table></details>
 
-<details> <summary align="justify"><b>Melakukan akses data melalui baris</b></br>Selain melakukan akses data melalui kolom, dengan menggunakan pandas juga bisa melakukan akses dengan menggunakan baris. Berbeda dengan akses melalui kolom, fungsi untuk menampilkan data dari suatu baris adalah fungsi .iloc[i] dimana [i] menunjukan urutan baris yang akan ditampilkan yang dimana indexnya diawali dari 0. Coba ketikan code di bawah ini untuk mempermudah : </br></br>import pandas as pd</br
-csv_data = pd.read_csv("https://dqlab-dataset.s3-ap-southeast-1.amazonaws.com/shopping_data.csv")</br
+<details> <summary align="justify"><b>Melakukan akses data melalui baris</b></br>Selain melakukan akses data melalui kolom, dengan menggunakan pandas juga bisa melakukan akses dengan menggunakan baris. Berbeda dengan akses melalui kolom, fungsi untuk menampilkan data dari suatu baris adalah fungsi .iloc[i] dimana [i] menunjukan urutan baris yang akan ditampilkan yang dimana indexnya diawali dari 0. Coba ketikan code di bawah ini untuk mempermudah : </br></br>import pandas as pd</br>
+csv_data = pd.read_csv("https://dqlab-dataset.s3-ap-southeast-1.amazonaws.com/shopping_data.csv")</br>
 print(csv_data.iloc[5])	
-</summary><table align="justify"><i>Output : </br></i>
+</summary><table align="justify"><i></br>Output : </br></i>
 <tr><td>CustomerID    </td><td>                 6</td></tr>
 <tr><td>Genre         </td><td>            Female</td></tr>
 <tr><td>Age           </td><td>                22</td></tr>
