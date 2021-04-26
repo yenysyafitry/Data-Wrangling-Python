@@ -21,7 +21,7 @@ print(csv_data.head()) </br> </br>
 <tr><td>1</td><td>2</td><td>Male </td><td>21</td><td>15</td><td>81</td></tr>
 <tr><td>2</td><td>3</td><td>Female </td><td>20</td><td>16 </td><td>6</td></tr>
 <tr><td>3</td><td>4</td><td>Female </td><td>23</td><td>16 </td><td>77</td></tr>
-<</br>
+</br>
   </table></details>
 
 <details> <summary align="justify"><b>Melakukan akses data kolom</b></br>Pertama yang harus dilakukan untuk melakukan akses kolom adalah mengetahui nama-nama kolom yang ada. Coba ketikkan kode di bawah ini untuk melihat nama kolom yang ada :</br></br><i>import pandas as pd</br>
